@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CalendarController;
+use App\Models\Calendar;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [CalendarController::class, 'index'])->name('index');
+Route::post('/events', [CalendarController::class, 'store']);
+Route::put('/events/{id}', [CalendarController::class, 'update']);
+Route::delete('/events/{id}', [CalendarController::class, 'destroy']);

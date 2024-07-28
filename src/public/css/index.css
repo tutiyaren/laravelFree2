@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1500px;
+}
+.calendar {
+  margin: 5% auto 0;
+  width: 95%
+}
+
+#eventModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#eventModal form {
+  display: flex;
+  flex-direction: column;
+}
+
+#eventModal form label,
+#eventModal form input,
+#eventModal form textarea,
+#eventModal form button {
+  margin-bottom: 10px;
+}
+
+#eventModal form button {
+  align-self: flex-end;
+}
+
+#eventModal form #deleteButton {
+  background-color: red;
+  color: white;
+  margin-left: 10px;
+}
+
+.fc-toolbar.fc-header-toolbar {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* 前へボタンのスタイル */
+.fc-toolbar .fc-prev-button {
+  margin-right: 10px; 
+}
+
+/* 次へボタンのスタイル */
+.fc-toolbar .fc-next-button {
+  margin-left: 10px;
+}
+
+/* タイトルのスタイル */
+.fc-toolbar-title {
+  margin: 0 10px; 
+  text-align: center;
+  flex: 1; 
+}
