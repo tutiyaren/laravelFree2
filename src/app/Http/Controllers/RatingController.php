@@ -15,9 +15,10 @@ class RatingController extends Controller
 
     public function store(RatingRequest $request)
     {
+        dd($request);
         $rating = $request->input('rating');
         $reviewData = [
-            'rating' => $rating;
+            'rating' => $rating,
         ];
         Rating::create($reviewData);
 
