@@ -10,7 +10,12 @@ class TestController extends Controller
 {
     public function test()
     {
-        // $qrCode = QrCode::size(200)->generate("Hello World");
         return view('test');
+    }
+
+    public function qrCode($id)
+    {
+        
+        return view('qrCode');
     }
 }

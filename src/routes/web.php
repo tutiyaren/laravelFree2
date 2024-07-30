@@ -15,3 +15,4 @@ use App\Http\Controllers\TestController;
 */
 
 Route::get('/', [TestController::class, 'test'])->name('test');
+Route::get('/qrCode/{id}', [TestController::class, 'qrCode'])->name('qrCode');
