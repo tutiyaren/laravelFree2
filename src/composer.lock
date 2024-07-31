@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "b32fd4ce71970cea2c68eca25f3e72c2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,52 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "calicastle/cuid",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CaliCastle/cuid.git",
+                "reference": "de6ea3ae7a71209a44b9536408e0a72c35ca98fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CaliCastle/cuid/zipball/de6ea3ae7a71209a44b9536408e0a72c35ca98fc",
+                "reference": "de6ea3ae7a71209a44b9536408e0a72c35ca98fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CaliCastle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cali Castle",
+                    "email": "cali@calicastle.com"
+                }
+            ],
+            "description": "A CUID generator",
+            "keywords": [
+                "Unique ID",
+                "collision free id",
+                "cuid",
+                "uuid"
+            ],
+            "support": {
+                "issues": "https://github.com/CaliCastle/cuid/issues",
+                "source": "https://github.com/CaliCastle/cuid/tree/v2.0.0"
+            },
+            "time": "2021-03-19T07:45:28+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2122,6 +2168,51 @@
                 "source": "https://github.com/opis/closure/tree/3.6.3"
             },
             "time": "2022-01-27T09:35:39+00:00"
+        },
+        {
+            "name": "paragonie/corner",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/corner.git",
+                "reference": "f222adc1da32547e20a3c5007f4a711b0cf633d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/corner/zipball/f222adc1da32547e20a3c5007f4a711b0cf633d0",
+                "reference": "f222adc1da32547e20a3c5007f4a711b0cf633d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7",
+                "psalm/plugin-phpunit": "<1",
+                "vimeo/psalm": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\Corner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com"
+                }
+            ],
+            "description": "Generic PHP Exceptions and Errors, made user-friendly.",
+            "support": {
+                "issues": "https://github.com/paragonie/corner/issues",
+                "source": "https://github.com/paragonie/corner/tree/v2.0.1"
+            },
+            "time": "2020-01-20T00:57:57+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -5182,6 +5273,64 @@
             "time": "2021-12-08T09:12:39+00:00"
         },
         {
+            "name": "visus/cuid2",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/visus-io/php-cuid2.git",
+                "reference": "17c9b3098d556bb2556a084c948211333cc19c79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/visus-io/php-cuid2/zipball/17c9b3098d556bb2556a084c948211333cc19c79",
+                "reference": "17c9b3098d556bb2556a084c948211333cc19c79",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.29",
+                "ext-ctype": "*",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^10.0",
+                "squizlabs/php_codesniffer": "^3.7",
+                "vimeo/psalm": "^5.4"
+            },
+            "suggest": {
+                "ext-gmp": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/compat.php"
+                ],
+                "psr-4": {
+                    "Visus\\Cuid2\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alan Brault",
+                    "email": "alan.brault@visus.io"
+                }
+            ],
+            "description": "A PHP library for generating collision-resistant ids (CUIDs).",
+            "keywords": [
+                "cuid",
+                "identifier"
+            ],
+            "support": {
+                "issues": "https://github.com/visus-io/php-cuid2/issues",
+                "source": "https://github.com/visus-io/php-cuid2/tree/4.1.0"
+            },
+            "time": "2024-05-14T13:23:35+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -7911,5 +8060,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
