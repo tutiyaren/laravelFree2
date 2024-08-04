@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [UserController::class, 'index'])->name('index');
+Route::get('/login', [UserController::class, 'login'])->name('login');
+Route::post('/signin', [UserController::class, 'signin'])->name('signin');
+Route::post('/logout', [UserController::class, 'logout'])->name('logout')->middleware('auth');
+
+
+Route::get('/', [UserController::class, 'index'])->name('index')->middleware('auth');
+
+// Auth::routes();

@@ -24,6 +24,8 @@ class User extends Authenticatable
         'password',
     ];
 
+    protected $primaryKey = 'cuid';
+
     protected $keyType = 'string';
 
     public $incrementing = false;
